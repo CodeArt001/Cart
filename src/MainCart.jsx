@@ -161,7 +161,7 @@ const MainCart = () => {
       <div className="flex ">
         <div>
           <h3 className="text-2xl font-bold p-5">Desserts</h3>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 w-[70rem] gap-5">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 max-w-7xl mx-auto gap-5">
             {OriginalCart.map((items) => (
               <Cartchild
                 key={items.id}

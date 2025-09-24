@@ -8,7 +8,7 @@ const AddCart = ({ cartItems, toggleDeletItems, toggleComfirmOrder }) => {
   );
   return (
     <div>
-      <div className="shadow w-[17rem] h-[23rem] bg-white overflow-y-auto">
+      <div className="shadow lg:w-[17rem] lg:h-[23rem] bg-white overflow-y-auto max-w-sm">
         <p className="p-3 text-red-500 ">Your Cart ({cartItems.length})</p>
         {cartItems.map((item) => {
           const price = parseFloat(item.amount.replace("$", ""));
@@ -45,9 +45,9 @@ const AddCart = ({ cartItems, toggleDeletItems, toggleComfirmOrder }) => {
         </button>
         <button
           onClick={toggleComfirmOrder}
-          className="mt-4 w-full bg-red-500 text-white py-2 rounded-full"
+          className="mt-4 lg:w-full bg-red-500 text-white lg:py-2 rounded-full  py-4 px-2 font-bold text-sm"
         >
-          Cormfirm order
+          Confirm order
         </button>
       </span>
     </div>

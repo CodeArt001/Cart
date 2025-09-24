@@ -10,10 +10,14 @@ const Cartchild = ({
   const inCart = cartItems.find((item) => item.id === items.id);
   return (
     <div className=" ">
-      <div className="relative hover:bg-red-400 transition duration-300 ">
-        <img src={items.image} alt="" className="rounded-xl w-full h-auto  " />
+      <div className="relative lg:hover:bg-red-400 transition duration-300 ">
+        <img
+          src={items.image}
+          alt=""
+          className="rounded-xl lg:w-full h-auto w-94 object-cover md:w-74 "
+        />
 
-        <div className="absolute -bottom-5 left-1/2  transform -translate-x-1/2">
+        <div className=" mt-4 flex justify-center  lg:absolute lg:-bottom-5 lg:left-1/2  lg:transform lg:-translate-x-1/2  ">
           {!inCart ? (
             <span
               onClick={handleAddToCart}
